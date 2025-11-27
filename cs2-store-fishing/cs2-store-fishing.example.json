@@ -1,0 +1,621 @@
+{
+  "commands": [
+    {
+      "fishing_cast_commands": ["fish"],
+      "fishing_region_commands": ["region"]
+    }
+  ],
+  "regions": [
+    {
+      "id": "shallow_waters",
+      "flags": [],
+      "allowed_boats": ["raft", "fishing_boat", "speedboat", "galleon", "yacht"],
+      "rarity_odds": {
+        "common": 0.75,
+        "uncommon": 0.18,
+        "rare": 0.05,
+        "epic": 0.015,
+        "legendary": 0.005
+      },
+      "fish_pool": ["sunfish", "bluegill", "perch", "bass", "catfish"],
+      "distance_from_center": 0.0
+    },
+    {
+      "id": "coastal_waters",
+      "flags": [],
+      "allowed_boats": ["raft", "fishing_boat", "speedboat", "galleon", "yacht"],
+      "rarity_odds": {
+        "common": 0.65,
+        "uncommon": 0.22,
+        "rare": 0.09,
+        "epic": 0.03,
+        "legendary": 0.01
+      },
+      "fish_pool": ["trout", "carp", "pike", "walleye", "muskie"],
+      "distance_from_center": 200.0
+    },
+    {
+      "id": "tropical_lagoon",
+      "flags": [],
+      "allowed_boats": ["fishing_boat", "speedboat", "galleon", "yacht"],
+      "rarity_odds": {
+        "common": 0.55,
+        "uncommon": 0.25,
+        "rare": 0.13,
+        "epic": 0.05,
+        "legendary": 0.02
+      },
+      "fish_pool": ["snapper", "grouper", "tarpon", "bonefish", "permit", "barracuda"],
+      "distance_from_center": 500.0
+    },
+    {
+      "id": "coral_reef",
+      "flags": [],
+      "allowed_boats": ["fishing_boat", "speedboat", "galleon", "yacht"],
+      "rarity_odds": {
+        "common": 0.45,
+        "uncommon": 0.28,
+        "rare": 0.16,
+        "epic": 0.08,
+        "legendary": 0.03
+      },
+      "fish_pool": ["clownfish", "angelfish", "parrotfish", "triggerfish", "lionfish", "moray_eel", "butterflyfish", "pufferfish"],
+      "distance_from_center": 800.0
+    },
+    {
+      "id": "deep_ocean",
+      "flags": [],
+      "allowed_boats": ["speedboat", "galleon", "yacht"],
+      "rarity_odds": {
+        "common": 0.35,
+        "uncommon": 0.30,
+        "rare": 0.20,
+        "epic": 0.11,
+        "legendary": 0.04
+      },
+      "fish_pool": ["tuna", "mahi_mahi", "wahoo", "sailfish", "marlin", "swordfish", "shark"],
+      "distance_from_center": 1500.0
+    },
+    {
+      "id": "arctic_waters",
+      "flags": [],
+      "allowed_boats": ["galleon", "yacht"],
+      "rarity_odds": {
+        "common": 0.30,
+        "uncommon": 0.28,
+        "rare": 0.22,
+        "epic": 0.13,
+        "legendary": 0.07
+      },
+      "fish_pool": ["salmon", "cod", "pollock", "haddock", "arctic_char", "halibut", "wolffish"],
+      "distance_from_center": 2000.0
+    },
+    {
+      "id": "abyssal_depths",
+      "flags": [],
+      "allowed_boats": ["yacht"],
+      "rarity_odds": {
+        "common": 0.20,
+        "uncommon": 0.25,
+        "rare": 0.28,
+        "epic": 0.18,
+        "legendary": 0.09
+      },
+      "fish_pool": ["giant_squid", "greenland_shark", "oarfish", "goblin_shark", "colossal_squid"],
+      "distance_from_center": 3500.0
+    }
+  ],
+  "boats": [
+    {
+      "id": "raft",
+      "flags": [],
+      "price": 0,
+      "speed_modifier": 1.0
+    },
+    {
+      "id": "fishing_boat",
+      "flags": [],
+      "price": 15000,
+      "speed_modifier": 1.3
+    },
+    {
+      "id": "speedboat",
+      "flags": [],
+      "price": 75000,
+      "speed_modifier": 1.8
+    },
+    {
+      "id": "galleon",
+      "flags": [],
+      "price": 350000,
+      "speed_modifier": 2.5
+    },
+    {
+      "id": "yacht",
+      "flags": [],
+      "price": 1500000,
+      "speed_modifier": 4.0
+    }
+  ],
+  "rods": [
+    {
+      "id": "basic_rod",
+      "flags": [],
+      "price": 0,
+      "max_weight": 10.0
+    },
+    {
+      "id": "reinforced_rod",
+      "flags": [],
+      "price": 2000,
+      "max_weight": 20.0
+    },
+    {
+      "id": "sturdy_rod",
+      "flags": [],
+      "price": 8000,
+      "max_weight": 40.0
+    },
+    {
+      "id": "professional_rod",
+      "flags": [],
+      "price": 30000,
+      "max_weight": 80.0
+    },
+    {
+      "id": "expert_rod",
+      "flags": [],
+      "price": 100000,
+      "max_weight": 200.0
+    },
+    {
+      "id": "master_rod",
+      "flags": [],
+      "price": 400000,
+      "max_weight": 500.0
+    },
+    {
+      "id": "legendary_rod",
+      "flags": [],
+      "price": 1200000,
+      "max_weight": 1000.0
+    }
+  ],
+  "reels": [
+    {
+      "id": "basic_reel",
+      "flags": [],
+      "price": 0,
+      "snap_reduction_percent": 0.0
+    },
+    {
+      "id": "improved_reel",
+      "flags": [],
+      "price": 1500,
+      "snap_reduction_percent": 10.0
+    },
+    {
+      "id": "quality_reel",
+      "flags": [],
+      "price": 6000,
+      "snap_reduction_percent": 20.0
+    },
+    {
+      "id": "advanced_reel",
+      "flags": [],
+      "price": 25000,
+      "snap_reduction_percent": 35.0
+    },
+    {
+      "id": "professional_reel",
+      "flags": [],
+      "price": 80000,
+      "snap_reduction_percent": 50.0
+    },
+    {
+      "id": "expert_reel",
+      "flags": [],
+      "price": 300000,
+      "snap_reduction_percent": 65.0
+    },
+    {
+      "id": "master_reel",
+      "flags": [],
+      "price": 900000,
+      "snap_reduction_percent": 80.0
+    }
+  ],
+  "baits": [
+    {
+      "id": "none",
+      "flags": [],
+      "price": 0,
+      "bite_chance": 0.25,
+      "rarity_bias": {
+        "common": 2.0,
+        "uncommon": 1.0,
+        "rare": 0.4,
+        "epic": 0.2,
+        "legendary": 0.1
+      }
+    },
+    {
+      "id": "basic_worms",
+      "flags": [],
+      "price": 1000,
+      "bite_chance": 0.30,
+      "rarity_bias": {
+        "common": 1.6,
+        "uncommon": 1.0,
+        "rare": 0.6,
+        "epic": 0.4,
+        "legendary": 0.2
+      }
+    },
+    {
+      "id": "minnows",
+      "flags": [],
+      "price": 4000,
+      "bite_chance": 0.35,
+      "rarity_bias": {
+        "common": 1.3,
+        "uncommon": 1.1,
+        "rare": 0.8,
+        "epic": 0.6,
+        "legendary": 0.4
+      }
+    },
+    {
+      "id": "crickets",
+      "flags": [],
+      "price": 12000,
+      "bite_chance": 0.40,
+      "rarity_bias": {
+        "common": 1.1,
+        "uncommon": 1.15,
+        "rare": 0.95,
+        "epic": 0.75,
+        "legendary": 0.5
+      }
+    },
+    {
+      "id": "shrimp",
+      "flags": [],
+      "price": 35000,
+      "bite_chance": 0.45,
+      "rarity_bias": {
+        "common": 0.9,
+        "uncommon": 1.1,
+        "rare": 1.1,
+        "epic": 0.9,
+        "legendary": 0.7
+      }
+    },
+    {
+      "id": "cut_bait",
+      "flags": [],
+      "price": 100000,
+      "bite_chance": 0.50,
+      "rarity_bias": {
+        "common": 0.7,
+        "uncommon": 1.0,
+        "rare": 1.2,
+        "epic": 1.1,
+        "legendary": 0.9
+      }
+    },
+    {
+      "id": "premium_lure",
+      "flags": [],
+      "price": 300000,
+      "bite_chance": 0.60,
+      "rarity_bias": {
+        "common": 0.5,
+        "uncommon": 0.8,
+        "rare": 1.15,
+        "epic": 1.3,
+        "legendary": 1.2
+      }
+    },
+    {
+      "id": "exotic_bait",
+      "flags": [],
+      "price": 800000,
+      "bite_chance": 0.60,
+      "rarity_bias": {
+        "common": 0.3,
+        "uncommon": 0.6,
+        "rare": 1.0,
+        "epic": 1.4,
+        "legendary": 1.6
+      }
+    }
+  ],
+  "fish": [
+    {
+      "id": "sunfish",
+      "min_weight": 0.1,
+      "max_weight": 1.0,
+      "value_per_lb": 15
+    },
+    {
+      "id": "bluegill",
+      "min_weight": 0.3,
+      "max_weight": 2.0,
+      "value_per_lb": 20
+    },
+    {
+      "id": "perch",
+      "min_weight": 0.5,
+      "max_weight": 3.0,
+      "value_per_lb": 30
+    },
+    {
+      "id": "bass",
+      "min_weight": 1.0,
+      "max_weight": 8.0,
+      "value_per_lb": 45
+    },
+    {
+      "id": "catfish",
+      "min_weight": 2.0,
+      "max_weight": 15.0,
+      "value_per_lb": 50
+    },
+    {
+      "id": "trout",
+      "min_weight": 1.0,
+      "max_weight": 10.0,
+      "value_per_lb": 60
+    },
+    {
+      "id": "carp",
+      "min_weight": 3.0,
+      "max_weight": 20.0,
+      "value_per_lb": 35
+    },
+    {
+      "id": "pike",
+      "min_weight": 5.0,
+      "max_weight": 30.0,
+      "value_per_lb": 70
+    },
+    {
+      "id": "walleye",
+      "min_weight": 2.0,
+      "max_weight": 12.0,
+      "value_per_lb": 65
+    },
+    {
+      "id": "muskie",
+      "min_weight": 10.0,
+      "max_weight": 50.0,
+      "value_per_lb": 80
+    },
+    {
+      "id": "snapper",
+      "min_weight": 3.0,
+      "max_weight": 25.0,
+      "value_per_lb": 90
+    },
+    {
+      "id": "grouper",
+      "min_weight": 5.0,
+      "max_weight": 40.0,
+      "value_per_lb": 100
+    },
+    {
+      "id": "tarpon",
+      "min_weight": 30.0,
+      "max_weight": 150.0,
+      "value_per_lb": 85
+    },
+    {
+      "id": "bonefish",
+      "min_weight": 2.0,
+      "max_weight": 12.0,
+      "value_per_lb": 110
+    },
+    {
+      "id": "permit",
+      "min_weight": 10.0,
+      "max_weight": 40.0,
+      "value_per_lb": 120
+    },
+    {
+      "id": "barracuda",
+      "min_weight": 8.0,
+      "max_weight": 50.0,
+      "value_per_lb": 95
+    },
+    {
+      "id": "clownfish",
+      "min_weight": 0.2,
+      "max_weight": 0.8,
+      "value_per_lb": 200
+    },
+    {
+      "id": "angelfish",
+      "min_weight": 0.5,
+      "max_weight": 2.5,
+      "value_per_lb": 220
+    },
+    {
+      "id": "parrotfish",
+      "min_weight": 2.0,
+      "max_weight": 15.0,
+      "value_per_lb": 115
+    },
+    {
+      "id": "triggerfish",
+      "min_weight": 1.0,
+      "max_weight": 8.0,
+      "value_per_lb": 125
+    },
+    {
+      "id": "lionfish",
+      "min_weight": 0.5,
+      "max_weight": 3.0,
+      "value_per_lb": 240
+    },
+    {
+      "id": "moray_eel",
+      "min_weight": 3.0,
+      "max_weight": 25.0,
+      "value_per_lb": 140
+    },
+    {
+      "id": "butterflyfish",
+      "min_weight": 0.3,
+      "max_weight": 1.5,
+      "value_per_lb": 260
+    },
+    {
+      "id": "pufferfish",
+      "min_weight": 0.5,
+      "max_weight": 5.0,
+      "value_per_lb": 180
+    },
+    {
+      "id": "tuna",
+      "min_weight": 10.0,
+      "max_weight": 80.0,
+      "value_per_lb": 130
+    },
+    {
+      "id": "mahi_mahi",
+      "min_weight": 8.0,
+      "max_weight": 40.0,
+      "value_per_lb": 135
+    },
+    {
+      "id": "wahoo",
+      "min_weight": 15.0,
+      "max_weight": 80.0,
+      "value_per_lb": 140
+    },
+    {
+      "id": "sailfish",
+      "min_weight": 40.0,
+      "max_weight": 120.0,
+      "value_per_lb": 145
+    },
+    {
+      "id": "marlin",
+      "min_weight": 50.0,
+      "max_weight": 200.0,
+      "value_per_lb": 150
+    },
+    {
+      "id": "swordfish",
+      "min_weight": 30.0,
+      "max_weight": 150.0,
+      "value_per_lb": 148
+    },
+    {
+      "id": "shark",
+      "min_weight": 40.0,
+      "max_weight": 300.0,
+      "value_per_lb": 120
+    },
+    {
+      "id": "salmon",
+      "min_weight": 5.0,
+      "max_weight": 40.0,
+      "value_per_lb": 155
+    },
+    {
+      "id": "cod",
+      "min_weight": 5.0,
+      "max_weight": 50.0,
+      "value_per_lb": 135
+    },
+    {
+      "id": "pollock",
+      "min_weight": 3.0,
+      "max_weight": 20.0,
+      "value_per_lb": 125
+    },
+    {
+      "id": "haddock",
+      "min_weight": 2.0,
+      "max_weight": 12.0,
+      "value_per_lb": 130
+    },
+    {
+      "id": "arctic_char",
+      "min_weight": 2.0,
+      "max_weight": 15.0,
+      "value_per_lb": 160
+    },
+    {
+      "id": "halibut",
+      "min_weight": 20.0,
+      "max_weight": 150.0,
+      "value_per_lb": 145
+    },
+    {
+      "id": "wolffish",
+      "min_weight": 10.0,
+      "max_weight": 60.0,
+      "value_per_lb": 150
+    },
+    {
+      "id": "giant_squid",
+      "min_weight": 100.0,
+      "max_weight": 600.0,
+      "value_per_lb": 70
+    },
+    {
+      "id": "greenland_shark",
+      "min_weight": 200.0,
+      "max_weight": 800.0,
+      "value_per_lb": 65
+    },
+    {
+      "id": "oarfish",
+      "min_weight": 150.0,
+      "max_weight": 500.0,
+      "value_per_lb": 75
+    },
+    {
+      "id": "goblin_shark",
+      "min_weight": 250.0,
+      "max_weight": 700.0,
+      "value_per_lb": 68
+    },
+    {
+      "id": "colossal_squid",
+      "min_weight": 300.0,
+      "max_weight": 1000.0,
+      "value_per_lb": 60
+    }
+  ],
+  "rarity": [
+    {
+      "id": "common",
+      "chance": 72,
+      "value_bonus": 1
+    },
+    {
+      "id": "uncommon",
+      "chance": 20,
+      "value_bonus": 2
+    },
+    {
+      "id": "rare",
+      "chance": 6,
+      "value_bonus": 4
+    },
+    {
+      "id": "epic",
+      "chance": 1.5,
+      "value_bonus": 8
+    },
+    {
+      "id": "legendary",
+      "chance": 0.5,
+      "value_bonus": 15
+    }
+  ]
+}
